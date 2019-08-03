@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    background-image: url("../images/papyrus.png");
+    color: #777777;
+    margin: auto;
+}
+
+.nav-bar {
+    background-color: #ffffff;
+    border-bottom: #cccccc solid 2px;
+    height: 100px;
+}
+
+.header {
+    max-width: 960px;
+    margin: auto;
+}
+
+.name {
+    background-color: #4aaaa5;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    height: 100px;
+    padding: 30px;
+    margin-top: 0;
+    border-bottom: #cccccc solid 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 35%;
+}
+
+.nav-links {
+    float: right;
+    background-color: #ffffff;
+    text-align: right;
+    margin-top: 40px;
+    width: 65%;
+}
+
+.nav-links a {
+    color: #666666;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+}
+
+a:active {
+    background-color: cornflowerblue;
+    color: #dddddd;
+}
+
+a:focus {
+    background-color: darkmagenta;
+}
+
+
+ul {
+    display: inline;
+}
+
+li{
+    display: inline;
+    font-size: 1.2em;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 960px;
+    margin: 2em auto auto auto;
+    border: #dddddd solid 1px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 1.5em;
+}
+
+hr {
+    border: #dddddd solid 1px;
+}
+
+.about-me-text {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.image {
+    width: 225px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.footer {
+    background-color: #666666;
+    text-align: center;
+    border-top: #4aaaa5 solid 8px;
+    padding-bottom: 1em;
+    margin: 0;
+    margin-top: 2em;
+    color: #cccccc;
+}
+
+.footer p{
+    margin-bottom:0;
+    padding: 10px;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: #dddddd 1px solid;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+form button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 1.3em;
+    padding: 12px 15px;
+    border: none;
+}
+
+form button:hover {
+    background-color: lavender;
+    color: #666666;
+}
+
+.port-images {
+    position: relative;
+    padding: 20px;
+}
+
+.img-1 {
+    height: 250px;
+    width: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.img-2 {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.img-3 {
+    height: 250px;
+    width: 300px;
+    margin-right: 30px;
+}
+.img-4 {
+    height: 250px;
+    width: 300px;
+}
+.img-5 {
+    height: 250px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .nav-bar {
+        width: 100%;
+        height: 100px;
+    }
+
+    .header {
+        max-width: 768px;
+    }
+
+    .name {
+        width: 40%;
+        height: 100px;
+    }
+
+    .nav-links {
+        width: 60%;
+    }
+
+    .container {
+        max-width: 768px;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+    }
+
+    .header {
+        max-width: 640px;
+    }
+
+    .name {
+        width: 45%;
+    }
+
+    .nav-links {
+        width: 55%;
+    }
+
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav-bar {
+        position: static;
+        width: 100%;
+    }
+
+    .header {
+        position: static;
+        padding: 0;
+    }
+
+    .name {
+        float: none;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .nav-links {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #about {
+        margin-left: 0;
+    }
+
+    .container {
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .image {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Portfolio Images*/
+
+    .img-1 {
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-2 {
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-3 {
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-4 {
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .img-5 {
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
